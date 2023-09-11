@@ -1,10 +1,10 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-section{
+/* section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,25 +19,26 @@ section{
     100%{
         filter: hue-rotate(360deg);
     }
-}
+} */
 /* body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #000;
-} */
+}
 .url{
     position: relative;
     width: 450px;
     height: 300px;
     background:transparent;
-    border-radius: 20px;
-    border: 2px solid rgba(255,255,255,.5);
-    justify-content: center;
+    /* border-radius: 20px; */
+/* border: 2px solid rgba(255,255,255,.5); */
+/* justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
-}
+    backdrop-filter: blur(10px); */
+
+/* }
 #long ,#small{
     position: relative;
     top:30%;
@@ -48,17 +49,20 @@ section{
     padding-left: 5px;
     margin-top: 5px;
     outline: none;
-    background: rgb(255, 249, 249);
-    margin-bottom:8 px;
+    /* background: rgb(255, 249, 249); */
+/* margin-bottom:8 px;
     border: 2px solid palevioletred;
     margin: 10px;
-}
-#short ,#shorted{
-    position: relative;
-    top:30%;
-    left: 13%;
-   border:solid palevioletred 2px;
-   height: 25px;
+    justify-content: center;
+    background:transparent;
+    outline: none;
+} */
+/* #short ,#shorted{
+    position: absolute;
+    /* top:30%; */
+/* left: 13%; */
+/* border:solid palevioletred 2px;
+   height: 35px;
    width: 60px;
    border-radius: 5px;
    outline: none;
@@ -67,20 +71,21 @@ section{
     font-family: "ProximaNova Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 15px;
    font-weight: 6px;
-   
-   
-}
+   outline: none;
+    */
+
+/* }
 h2{
     position: relative;
     top: 25%;
      left: 13%;
     /* text-align: center; */
-    color: orangered;
+/* color: orangered;
     font-size: 2em;
     font-family: 'Dancing Script', cursive;
     font-family: 'M PLUS Rounded 1c', sans-serif;
    
-}
+} */
 /* label{
      position: relative;
     top:40%;
@@ -91,7 +96,7 @@ h2{
    font-size: 12px;
    font-weight: 6px;
 } */
-#short:hover{
+/* #short:hover{
     background-color: pink;
     transform: .5s;
 }
@@ -106,4 +111,117 @@ h2{
         border: none;
         border-radius: 0;
     }
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(2, 1, 21, 0.7), rgba(1, 1, 22, 0.7)),
+    url("/img/o.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+h2 {
+  color: aliceblue;
+  font-family: "ProximaNova Bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+.url {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+#long,
+#small {
+  width: 90%;
+  font-size: 17px;
+  padding: 10px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  /* backdrop-filter: blur(10px); */
+  background: rgba(255, 255, 255, 0.838);
+}
+#short,
+#shorted {
+  position: absolute;
+  right: 8%;
+  background: rgba(224, 224, 224, 0.838);;
+  z-index: 1;
+  /* background: rgb(78, 78, 242); */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  /* backdrop-filter: blur(10px); */
+}
+#short:hover {
+  color: rgb(19, 24, 116);
+}
+#shorted:hover {
+  color: rgb(19, 24, 116);
+}
+::placeholder {
+  font-size: 12px;
+  font-weight: 7px;
+}
+::selection {
+  color: cyan;
+  background: purple;
+}
+
+/* #shorted:active {
+  background: #809ce2;
+}
+#shorted:before {
+  content: "copied";
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background: #5c81dc;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  display: none;
+}
+#shorted::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  background: #5c81dc;
+  transform: rotate(45deg);
+  display: none;
+}
+#shorted.active::before,
+#shorted.active::before {
+  display: block;
+} */
+
+
+#tooltip {
+  position: absolute;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  top:30%;
+  left: 93%;
+  background-color: #5c81dc;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: none;
 }
